@@ -26,8 +26,8 @@ author:
   name             : "Sansiddho Maity"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "PhD Student in Economics at Monash University"
-  location         : "Melbourne, Australia"
-  employer         : "Monash University"
+  location         : 
+  employer         : 
   uri              : # URL
   email            : "sansiddho.maity1@monash.edu" 
 
