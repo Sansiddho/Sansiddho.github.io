@@ -22,7 +22,7 @@ repository               : "https://sansiddho.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Profile 2.jpg"
+  avatar           : "Profile 2.jpeg"
   name             : "Sansiddho Maity"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "PhD Student in Economics at Monash University"
