@@ -1,20 +1,12 @@
 ---
-title: "Teaching experience 1"
+title: "Teaching Associate"
 collection: teaching
-type: "Undergraduate course"
+type: "ECC1100 Principles of Macroeconomics"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Monash University, Department of Economics"
+date: 2023-02-21
+location: "Melbourne, Australia"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Responsible for conducting, designing and delivering tutorials and evaluating student performance through tests, reports and presentations.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
