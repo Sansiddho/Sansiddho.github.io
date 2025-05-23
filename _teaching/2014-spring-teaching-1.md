@@ -2,7 +2,7 @@
 title: "Teaching Associate"
 collection: teaching
 type: "ECC1100 Principles of Macroeconomics"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/teaching-1
 venue: "Monash University, Department of Economics"
 date: 2023-02-21
 location: "Melbourne, Australia"
