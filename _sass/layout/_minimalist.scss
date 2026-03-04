@@ -1,0 +1,129 @@
+/* ==========================================================================
+   MINIMALIST OVERRIDES
+   ========================================================================== */
+
+/* Body & typography */
+body {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+/* Masthead — slimmer, cleaner */
+.masthead {
+  border-bottom: 1px solid var(--global-border-color);
+  box-shadow: none;
+
+  &::after {
+    display: none;
+  }
+
+  &__inner-wrap {
+    padding: 0.6em 1em;
+  }
+}
+
+.masthead__menu-item--lg {
+  font-weight: 500;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* Navigation links */
+.greedy-nav {
+  a {
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+}
+
+/* Sidebar — clean spacing */
+.author__name {
+  font-weight: 600;
+  font-size: 1.05em;
+  letter-spacing: -0.01em;
+}
+
+.author__bio {
+  font-size: 0.82em;
+  line-height: 1.55;
+  color: var(--global-text-color-light);
+}
+
+.author__urls a {
+  font-size: 0.82em;
+}
+
+/* Page content */
+.page__title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.page__content {
+  h2 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid var(--global-border-color);
+    padding-bottom: 0.3em;
+    margin-top: 2em;
+  }
+
+  h3 {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--global-border-color);
+    transition: border-color 0.15s ease;
+
+    &:hover {
+      border-bottom-color: var(--global-link-color);
+      text-decoration: none;
+    }
+  }
+
+  p {
+    line-height: 1.75;
+  }
+}
+
+/* Footer — minimal */
+.page__footer {
+  border-top: 1px solid var(--global-border-color);
+  background: transparent;
+  font-size: 0.78em;
+}
+
+/* Archive / listing pages */
+.archive__item-title {
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: -0.01em;
+}
+
+/* Remove unnecessary shadows and decorations */
+.btn {
+  box-shadow: none;
+  border-radius: 2px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* CV page — clean table-like layout */
+.page__content dl dt {
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--global-text-color-light);
+}

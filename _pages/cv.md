@@ -11,54 +11,53 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Master (Research) of Commerce, Economics**, Monash University, Australia, 2025–present
+  * Grade: High Distinction (89.6%)
+  * Thesis: *"Targeting Financial Conditions through Asset Purchases"*
+  * Supervisor: Dr. Alexander Haas
+  * Coursework: Macroeconometrics, Advanced Macroeconomics, Advanced Microeconomics, Quantitative Macroeconomics, Structural Econometrics
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Master (Coursework), Applied Economics and Econometrics**, Monash University, Australia, 2022–2024
+  * Grade: High Distinction (81.1%)
+  * Research: *"Assessing Monetary Policy Transmission Through Bank Lending During and After COVID-19 in Australia"*
+  * Supervisor: Dr. Mark Crosby
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **B.Sc. Economics (Hons.)**, Symbiosis International University, India, 2019–2022
+  * Grade: High Distinction (8.18/10)
+  * Dissertation: *"The Transmission of British Monetary Policy through Foreign Banks in India"*
+  * Supervisor: Ms. Sushma Nayak
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research Interests
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+Macroeconomics, Macro-finance, Monetary Policy, Financial Frictions
 
-Publications
+Research
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* **Targeting Financial Conditions Through Asset Purchases** (2025)
+  * Master's Thesis, Monash University
+  * Supervisor: Dr. Alexander Haas
+  * This paper extends the financial conditions index (FCI) targeting framework to analyze optimal dual-instrument monetary policy. Building on Caballero and Simsek's theoretical model, I demonstrate how central banks can achieve first-best macroeconomic outcomes by jointly deploying interest rates and central bank asset purchases (CBAP).
+
+Awards & Honors
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* Donald Cochrane Graduate Research Scholarship, Monash University (2025)
+* Sir John Monash Fee Scholarship, Monash University (2025)
+* Nominated for the MSA Teaching Excellence Award, Monash University (2024)
+* Quarterfinalist, Australian National BP Debating Championship (2024)
+
+Work & Teaching Experience
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **Teaching Associate (Economics)**, Monash University, Feb 2023 – Present
+  * Delivered workshop lectures for first-year Microeconomics to cohorts exceeding 300 students
+  * Conducted tutorials for first-year Macroeconomics for more than 120 students across multiple semesters
+  * Designed, graded, and provided feedback on assessments including tests, workshops, and presentations
+
+* **Research Assistant** (for Dr. Jaai Parasnis), Monash University, Jun 2023 – Aug 2023
+  * Conducted literature reviews on socioeconomic disparities and gender gaps in educational outcomes
+  * Summarised empirical research, prepared syntheses, and presented findings
+  * Evaluated research gaps and identified methodological limitations in existing literature
+
+* **Capital Markets Research Intern**, Sakal Money, Pune, India, Feb 2021 – Apr 2021
+  * Collected and processed secondary financial data from BSE, NSE, and the RBI
+  * Developed econometric models to study the price discovery role of derivatives in Indian capital markets
+  * Communicated insights through analytical reports tailored to institutional stakeholders
