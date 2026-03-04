@@ -18,7 +18,7 @@ redirect_from:
     <div class="cv-content">
       <strong>Master (Research) of Commerce, Economics</strong><br>
       Monash University, Australia<br>
-      <p>Grade: High Distinction (89.6%)<br>
+      <p>High Distinction<br>
       Thesis: <em>Targeting Financial Conditions through Asset Purchases</em><br>
       Supervisor: Dr. Alexander Haas</p>
     </div>
@@ -29,7 +29,7 @@ redirect_from:
     <div class="cv-content">
       <strong>Master (Coursework), Applied Economics and Econometrics</strong><br>
       Monash University, Australia<br>
-      <p>Grade: High Distinction (81.1%)<br>
+      <p>High Distinction<br>
       Research: <em>Assessing Monetary Policy Transmission Through Bank Lending During and After COVID-19 in Australia</em><br>
       Supervisor: Dr. Mark Crosby</p>
     </div>
@@ -40,7 +40,7 @@ redirect_from:
     <div class="cv-content">
       <strong>B.Sc. Economics (Hons.)</strong><br>
       Symbiosis International University, India<br>
-      <p>Grade: High Distinction (8.18/10)<br>
+      <p>High Distinction<br>
       Dissertation: <em>The Transmission of British Monetary Policy through Foreign Banks in India</em><br>
       Supervisor: Ms. Sushma Nayak</p>
     </div>
