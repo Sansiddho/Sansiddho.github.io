@@ -4,6 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
+
+  <!-- SEO meta tags -->
+  <meta name="description" content="Sansiddho Maity — PhD student in Economics at Monash University. Research in Macroeconomics, Macro-finance, Monetary Policy, and Financial Frictions.">
+  <meta name="keywords" content="Sansiddho Maity, economics, PhD, Monash University, macroeconomics, monetary policy, macro-finance, financial frictions">
+  <meta name="author" content="Sansiddho Maity">
+  <link rel="canonical" href="https://sansiddho.github.io{{ page.url }}">
+
+  <!-- Open Graph (for LinkedIn, Facebook, etc.) -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}Sansiddho Maity">
+  <meta property="og:description" content="PhD student in Economics at Monash University. Research in Macroeconomics, Monetary Policy, and Financial Frictions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sansiddho.github.io{{ page.url }}">
+  <meta property="og:site_name" content="Sansiddho Maity">
+
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {% endif %}Sansiddho Maity">
+  <meta name="twitter:description" content="PhD student in Economics at Monash University. Research in Macroeconomics, Monetary Policy, and Financial Frictions.">
+
   <link rel="stylesheet" href="/assets/css/minimal.css">
 </head>
 <body>
