@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.name }}</title>
+  <link rel="stylesheet" href="/assets/css/minimal.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <span class="site-name"><a href="/">{{ site.name }}</a></span>
+      <ul>
+        <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="/publications/" {% if page.url contains 'publications' or page.url contains 'publication/' %}class="active"{% endif %}>Research</a></li>
+        <li><a href="/teaching/" {% if page.url contains 'teaching' %}class="active"{% endif %}>Teaching</a></li>
+        <li><a href="/cv/" {% if page.url contains 'cv' %}class="active"{% endif %}>CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; {{ 'now' | date: "%Y" }} {{ site.name }}</span>
+      <span>
+        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">LinkedIn</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleAbstract(btn) {
+      var body = btn.nextElementSibling;
+      if (body.style.display === 'none' || body.style.display === '') {
+        body.style.display = 'block';
+        btn.textContent = 'Abstract [\u2212]';
+      } else {
+        body.style.display = 'none';
+        btn.textContent = 'Abstract [+]';
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,36 +1,33 @@
 ---
-layout: archive
-title: "Work in Progress"
+layout: minimal
+title: "Research"
 permalink: /publications/
-author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<div class="page-header">
+  <h1>Research</h1>
+</div>
 
-{% include base_path %}
+<h2 style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:20px;">Work in Progress</h2>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+<ul class="paper-list">
+{% assign wip = site.publications | where: "category", "workinprogress" %}
+{% for paper in wip reversed %}
+  <li class="paper-item">
+    <div class="paper-title">
+      {% if paper.paperurl %}
+        <a href="{{ paper.paperurl }}" target="_blank">{{ paper.title }}</a>
+      {% else %}
+        {{ paper.title }}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+    </div>
+    {% if paper.venue and paper.venue != "" %}
+      <div class="paper-meta">{{ paper.venue }}</div>
+    {% endif %}
+    {% if paper.content and paper.content != "" %}
+      <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract [+]</button>
+      <div class="abstract-body">{{ paper.content | strip_html }}</div>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>

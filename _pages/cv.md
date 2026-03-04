@@ -1,63 +1,146 @@
 ---
-layout: archive
+layout: minimal
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<div class="page-header">
+  <h1>CV</h1>
+</div>
 
-Education
-======
-* **Master (Research) of Commerce, Economics**, Monash University, Australia, 2025–present
-  * Grade: High Distinction (89.6%)
-  * Thesis: *"Targeting Financial Conditions through Asset Purchases"*
-  * Supervisor: Dr. Alexander Haas
-  * Coursework: Macroeconometrics, Advanced Macroeconomics, Advanced Microeconomics, Quantitative Macroeconomics, Structural Econometrics
+<div class="cv-section">
+  <h2>Education</h2>
 
-* **Master (Coursework), Applied Economics and Econometrics**, Monash University, Australia, 2022–2024
-  * Grade: High Distinction (81.1%)
-  * Research: *"Assessing Monetary Policy Transmission Through Bank Lending During and After COVID-19 in Australia"*
-  * Supervisor: Dr. Mark Crosby
+  <div class="cv-entry">
+    <div class="cv-year">2025 &ndash;</div>
+    <div class="cv-content">
+      <strong>Master (Research) of Commerce, Economics</strong><br>
+      Monash University, Australia<br>
+      <p>Grade: High Distinction (89.6%)<br>
+      Thesis: <em>Targeting Financial Conditions through Asset Purchases</em><br>
+      Supervisor: Dr. Alexander Haas</p>
+    </div>
+  </div>
 
-* **B.Sc. Economics (Hons.)**, Symbiosis International University, India, 2019–2022
-  * Grade: High Distinction (8.18/10)
-  * Dissertation: *"The Transmission of British Monetary Policy through Foreign Banks in India"*
-  * Supervisor: Ms. Sushma Nayak
+  <div class="cv-entry">
+    <div class="cv-year">2022 &ndash; 24</div>
+    <div class="cv-content">
+      <strong>Master (Coursework), Applied Economics and Econometrics</strong><br>
+      Monash University, Australia<br>
+      <p>Grade: High Distinction (81.1%)<br>
+      Research: <em>Assessing Monetary Policy Transmission Through Bank Lending During and After COVID-19 in Australia</em><br>
+      Supervisor: Dr. Mark Crosby</p>
+    </div>
+  </div>
 
-Research Interests
-======
-Macroeconomics, Macro-finance, Monetary Policy, Financial Frictions
+  <div class="cv-entry">
+    <div class="cv-year">2019 &ndash; 22</div>
+    <div class="cv-content">
+      <strong>B.Sc. Economics (Hons.)</strong><br>
+      Symbiosis International University, India<br>
+      <p>Grade: High Distinction (8.18/10)<br>
+      Dissertation: <em>The Transmission of British Monetary Policy through Foreign Banks in India</em><br>
+      Supervisor: Ms. Sushma Nayak</p>
+    </div>
+  </div>
+</div>
 
-Work in Progress
-======
-* **Targeting Financial Conditions Through Asset Purchases**
-  * Master's Thesis, Monash University (ongoing)
-  * Supervisor: Dr. Alexander Haas
-  * This paper extends the financial conditions index (FCI) targeting framework to analyze optimal dual-instrument monetary policy. Building on Caballero and Simsek's theoretical model, I demonstrate how central banks can achieve first-best macroeconomic outcomes by jointly deploying interest rates and central bank asset purchases (CBAP).
+<div class="cv-section">
+  <h2>Research Interests</h2>
+  <div class="cv-entry">
+    <div class="cv-year"></div>
+    <div class="cv-content">
+      <p>Macroeconomics, Macro-finance, Monetary Policy, Financial Frictions</p>
+    </div>
+  </div>
+</div>
 
-Awards & Honors
-======
-* Donald Cochrane Graduate Research Scholarship, Monash University (2025)
-* Sir John Monash Fee Scholarship, Monash University (2025)
-* Nominated for the MSA Teaching Excellence Award, Monash University (2024)
-* Quarterfinalist, Australian National BP Debating Championship (2024)
+<div class="cv-section">
+  <h2>Work in Progress</h2>
+  <div class="cv-entry">
+    <div class="cv-year">2025</div>
+    <div class="cv-content">
+      <strong>Targeting Financial Conditions Through Asset Purchases</strong><br>
+      <p>Master's Thesis, Monash University (ongoing)<br>
+      Supervisor: Dr. Alexander Haas</p>
+    </div>
+  </div>
+</div>
 
-Work & Teaching Experience
-======
-* **Teaching Associate (Economics)**, Monash University, Feb 2023 – Present
-  * Delivered workshop lectures for first-year Microeconomics to cohorts exceeding 300 students
-  * Conducted tutorials for first-year Macroeconomics for more than 120 students across multiple semesters
-  * Designed, graded, and provided feedback on assessments including tests, workshops, and presentations
+<div class="cv-section">
+  <h2>Awards &amp; Honors</h2>
 
-* **Research Assistant** (for Dr. Jaai Parasnis), Monash University, Jun 2023 – Aug 2023
-  * Conducted literature reviews on socioeconomic disparities and gender gaps in educational outcomes
-  * Summarised empirical research, prepared syntheses, and presented findings
-  * Evaluated research gaps and identified methodological limitations in existing literature
+  <div class="cv-entry">
+    <div class="cv-year">2025</div>
+    <div class="cv-content">
+      <strong>Donald Cochrane Graduate Research Scholarship</strong><br>
+      <p>Monash University</p>
+    </div>
+  </div>
 
-* **Capital Markets Research Intern**, Sakal Money, Pune, India, Feb 2021 – Apr 2021
-  * Collected and processed secondary financial data from BSE, NSE, and the RBI
-  * Developed econometric models to study the price discovery role of derivatives in Indian capital markets
-  * Communicated insights through analytical reports tailored to institutional stakeholders
+  <div class="cv-entry">
+    <div class="cv-year">2025</div>
+    <div class="cv-content">
+      <strong>Sir John Monash Fee Scholarship</strong><br>
+      <p>Monash University</p>
+    </div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-year">2024</div>
+    <div class="cv-content">
+      <strong>Nominated, MSA Teaching Excellence Award</strong><br>
+      <p>Monash University</p>
+    </div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-year">2024</div>
+    <div class="cv-content">
+      <strong>Quarterfinalist, Australian National BP Debating Championship</strong>
+    </div>
+  </div>
+</div>
+
+<div class="cv-section">
+  <h2>Work &amp; Teaching Experience</h2>
+
+  <div class="cv-entry">
+    <div class="cv-year">2023 &ndash;</div>
+    <div class="cv-content">
+      <strong>Teaching Associate (Economics)</strong><br>
+      Monash University, Melbourne<br>
+      <ul>
+        <li>Workshop lectures for first-year Microeconomics (300+ students)</li>
+        <li>Tutorials for first-year Macroeconomics (120+ students, multiple semesters)</li>
+        <li>Designed and graded assessments including tests, workshops, and presentations</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-year">2023</div>
+    <div class="cv-content">
+      <strong>Research Assistant</strong> (for Dr. Jaai Parasnis)<br>
+      Monash University, Melbourne<br>
+      <ul>
+        <li>Literature reviews on socioeconomic disparities and gender gaps in educational outcomes</li>
+        <li>Synthesised empirical research and evaluated methodological limitations</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-year">2021</div>
+    <div class="cv-content">
+      <strong>Capital Markets Research Intern</strong><br>
+      Sakal Money, Pune, India<br>
+      <ul>
+        <li>Collected and processed financial data from BSE, NSE, and the RBI</li>
+        <li>Developed econometric models on price discovery in Indian capital markets</li>
+      </ul>
+    </div>
+  </div>
+</div>
