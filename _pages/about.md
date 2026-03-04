@@ -9,12 +9,12 @@ redirect_from:
 
 <div class="home-header">
   <h1>Sansiddho Maity</h1>
-  <p class="affiliation">Master (Research) Candidate in Economics &mdash; Monash University, Melbourne</p>
+  <p class="affiliation">PhD Student in Economics &mdash; Monash University, Melbourne</p>
 </div>
 
 <div class="home-bio">
   <p>
-    I am a Master (Research) candidate in Economics at Monash University, supervised by Dr. Alexander Haas. My thesis extends the financial conditions index (FCI) targeting framework to analyze optimal dual-instrument monetary policy.
+    I am a PhD student in Economics at Monash University, supervised by Dr. Alexander Haas. My thesis extends the financial conditions index (FCI) targeting framework to analyze optimal dual-instrument monetary policy.
   </p>
   <p>
     My research interests are in <strong>Macroeconomics</strong>, <strong>Macro-finance</strong>, <strong>Monetary Policy</strong>, and <strong>Financial Frictions</strong>.
