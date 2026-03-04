@@ -31,10 +31,10 @@ Research Interests
 ======
 Macroeconomics, Macro-finance, Monetary Policy, Financial Frictions
 
-Research
+Work in Progress
 ======
-* **Targeting Financial Conditions Through Asset Purchases** (2025)
-  * Master's Thesis, Monash University
+* **Targeting Financial Conditions Through Asset Purchases**
+  * Master's Thesis, Monash University (ongoing)
   * Supervisor: Dr. Alexander Haas
   * This paper extends the financial conditions index (FCI) targeting framework to analyze optimal dual-instrument monetary policy. Building on Caballero and Simsek's theoretical model, I demonstrate how central banks can achieve first-best macroeconomic outcomes by jointly deploying interest rates and central bank asset purchases (CBAP).
 
