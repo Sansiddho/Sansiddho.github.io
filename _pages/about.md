@@ -8,6 +8,9 @@ redirect_from:
 ---
 
 <div class="home-header">
+  <div class="home-photo">
+    <img src="/images/profile2.jpeg" alt="Sansiddho Maity">
+  </div>
   <h1>Sansiddho Maity</h1>
   <p class="affiliation">PhD Student in Economics &mdash; Monash University, Melbourne</p>
 </div>
