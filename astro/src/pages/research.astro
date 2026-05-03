@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+const papers = (await getCollection('papers')).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
+const wip = papers.filter(p => p.data.status === 'workinprogress');
+const published = papers.filter(p => p.data.status === 'published');
+const rr = papers.filter(p => p.data.status === 'revise-resubmit');
+
+const rendered = await Promise.all(papers.map(async p => ({ id: p.id, content: (await render(p)).Content })));
+const contentMap = Object.fromEntries(rendered.map(r => [r.id, r.content]));
+---
+
+<Base title="Research — Sansiddho Maity" description="Research in monetary policy, macro-finance, and financial conditions targeting.">
+  <div class="page-header">
+    <h1>Research</h1>
+  </div>
+
+  {wip.length > 0 && (
+    <div class="papers-group">
+      <h2 class="section-label">Work in Progress</h2>
+      {wip.map(paper => {
+        const Content = contentMap[paper.id];
+        return (
+          <div class="paper-item">
+            <p class="paper-title">{paper.data.title}</p>
+            <p class="paper-meta">
+              {paper.data.year}
+              {paper.data.supervisor && ` · Supervised by ${paper.data.supervisor}`}
+              {paper.data.venue && ` · ${paper.data.venue}`}
+            </p>
+            <div class="paper-links">
+              {paper.data.paperUrl && <a href={paper.data.paperUrl} target="_blank" rel="noopener">Paper</a>}
+              {paper.data.pdfUrl && <a href={paper.data.pdfUrl} target="_blank" rel="noopener">PDF</a>}
+            </div>
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <div class="abstract-body">
+                <Content />
+              </div>
+            </details>
+          </div>
+        );
+      })}
+    </div>
+  )}
+
+  {rr.length > 0 && (
+    <div class="papers-group">
+      <h2 class="section-label">Revise & Resubmit</h2>
+      {rr.map(paper => {
+        const Content = contentMap[paper.id];
+        return (
+          <div class="paper-item">
+            <p class="paper-title">{paper.data.title}</p>
+            <p class="paper-meta">
+              {paper.data.year}
+              {paper.data.venue && ` · ${paper.data.venue}`}
+              {paper.data.coauthors && ` · With ${paper.data.coauthors.join(', ')}`}
+            </p>
+            <div class="paper-links">
+              {paper.data.paperUrl && <a href={paper.data.paperUrl} target="_blank" rel="noopener">Paper</a>}
+              {paper.data.pdfUrl && <a href={paper.data.pdfUrl} target="_blank" rel="noopener">PDF</a>}
+            </div>
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <div class="abstract-body">
+                <Content />
+              </div>
+            </details>
+          </div>
+        );
+      })}
+    </div>
+  )}
+
+  {published.length > 0 && (
+    <div class="papers-group">
+      <h2 class="section-label">Publications</h2>
+      {published.map(paper => {
+        const Content = contentMap[paper.id];
+        return (
+          <div class="paper-item">
+            <p class="paper-title">{paper.data.title}</p>
+            <p class="paper-meta">
+              {paper.data.year}
+              {paper.data.venue && ` · ${paper.data.venue}`}
+              {paper.data.coauthors && ` · With ${paper.data.coauthors.join(', ')}`}
+            </p>
+            <div class="paper-links">
+              {paper.data.paperUrl && <a href={paper.data.paperUrl} target="_blank" rel="noopener">Paper</a>}
+              {paper.data.pdfUrl && <a href={paper.data.pdfUrl} target="_blank" rel="noopener">PDF</a>}
+            </div>
+            <details class="abstract">
+              <summary>Abstract</summary>
+              <div class="abstract-body">
+                <Content />
+              </div>
+            </details>
+          </div>
+        );
+      })}
+    </div>
+  )}
+</Base>

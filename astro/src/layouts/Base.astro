@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'PhD candidate in Economics at Monash University. Research in macroeconomics, monetary policy, and macro-finance.' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL('/images/profile.jpg', Astro.site)} />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container">
+        <a href="/" class="nav-name">Sansiddho Maity</a>
+        <ul class="nav-links">
+          <li><a href="/research" aria-current={Astro.url.pathname.startsWith('/research') ? 'page' : undefined}>Research</a></li>
+          <li><a href="/teaching" aria-current={Astro.url.pathname.startsWith('/teaching') ? 'page' : undefined}>Teaching</a></li>
+          <li><a href="/cv" aria-current={Astro.url.pathname.startsWith('/cv') ? 'page' : undefined}>CV</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© {new Date().getFullYear()} Sansiddho Maity</span>
+        <div class="footer-links">
+          <a href="mailto:sansiddhomaity@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/sansiddho" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://bsky.app/profile/sansiddho.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+          <a href="https://github.com/Sansiddho" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

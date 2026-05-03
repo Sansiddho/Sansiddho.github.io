@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+const courses = (await getCollection('teaching')).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
+const rendered = await Promise.all(courses.map(async c => ({ id: c.id, content: (await render(c)).Content })));
+const contentMap = Object.fromEntries(rendered.map(r => [r.id, r.content]));
+---
+
+<Base title="Teaching — Sansiddho Maity" description="Teaching experience at Monash University.">
+  <div class="page-header">
+    <h1>Teaching</h1>
+    <p class="page-desc">Teaching Associate in Economics, Monash University (Feb 2023 – present)</p>
+  </div>
+
+  <h2 class="section-label">Courses</h2>
+
+  {courses.map(course => {
+    const Content = contentMap[course.id];
+    return (
+      <div class="teaching-item">
+        <div class="teaching-header">
+          <span class="teaching-title">{course.data.title}</span>
+          <span class="teaching-code">{course.data.courseCode}</span>
+        </div>
+        <p class="teaching-meta">{course.data.venue} &middot; {course.data.dateRange}</p>
+        <div class="teaching-desc">
+          <Content />
+        </div>
+      </div>
+    );
+  })}
+</Base>

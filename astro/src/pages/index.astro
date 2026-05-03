@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const newsItems = (await getCollection('news'))
+  .sort((a, b) => b.data.date.localeCompare(a.data.date))
+  .slice(0, 5);
+
+function formatNewsDate(isoDate: string) {
+  const [year, month] = isoDate.split('-');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${months[parseInt(month) - 1]} ${year}`;
+}
+---
+
+<Base title="Sansiddho Maity">
+  <div class="home-header">
+    <img
+      src="/images/profile.jpg"
+      alt="Sansiddho Maity"
+      class="home-photo"
+    />
+    <div class="home-intro">
+      <h1>Sansiddho Maity</h1>
+      <p class="home-title">PhD Candidate in Economics &mdash; Monash University, Melbourne</p>
+      <p class="home-bio">
+        I am a PhD student in Economics at Monash University, supervised by
+        <a href="https://sites.google.com/view/alexanderhaas/" target="_blank" rel="noopener">Dr. Alexander Haas</a>.
+        My thesis extends the financial conditions index (FCI) targeting framework to study
+        optimal dual-instrument monetary policy using interest rates and asset purchases.
+      </p>
+      <p class="home-interests">
+        <strong>Research interests</strong>
+        Macroeconomics &middot; Macro-finance &middot; Monetary Policy &middot; Financial Frictions
+      </p>
+      <div class="home-contact">
+        <a href="mailto:sansiddhomaity@gmail.com">sansiddhomaity@gmail.com</a>
+        <a href="https://linkedin.com/in/sansiddho" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://bsky.app/profile/sansiddho.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+        <a href="https://github.com/Sansiddho" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  {newsItems.length > 0 && (
+    <div class="news-section">
+      <h2 class="section-label">News</h2>
+      <ul class="news-list">
+        {newsItems.map((item) => (
+          <li class="news-item">
+            <span class="news-date">{formatNewsDate(item.data.date)}</span>
+            <span class="news-text" set:html={item.data.text} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</Base>
